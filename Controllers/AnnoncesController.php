@@ -19,8 +19,6 @@ class AnnoncesController extends Controller
         // On va chercher toutes les annonces actives
         $pets =  $petsModel->findPets();
 
-        // $nbrPets = $pets-> rowcount();
-
         // On génère la vue
         $this->render('annonces/index',['pets'=>$pets]);  //, compact('annonces') , 'nbr'=>$totalPets] , 'nbr'=>$nbrPets]
     }
